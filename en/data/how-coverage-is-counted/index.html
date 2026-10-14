@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Media Coverage Is Determined · AYMED: Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public (TÜBİTAK 3005 · Project No 225K477)</title>
+<meta name="description" content="The project&#39;s main variable is whether a decision was covered in the media. The rules on this page must be kept in mind when reading the figures.">
+<link rel="alternate" hreflang="tr" href="https://aymed3005.github.io/aymed/veri/nasil-sayiliyor/">
+<link rel="canonical" href="https://aymed3005.github.io/aymed/en/data/how-coverage-is-counted/"><link rel="alternate" hreflang="en" href="https://aymed3005.github.io/aymed/en/data/how-coverage-is-counted/"><link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../assets/fonts/cinzel-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/cinzel-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/css/site.css?v=f024de59">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../../../en/">
+      <span class="brand-text"><strong>AYMED</strong><span>Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public</span><span>TÜBİTAK 3005 · Project No 225K477</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="../../../en/project/about/" >About the Project</a></li>
+        <li><a href="../../../en/data/datasets/" aria-current="page">Data</a></li>
+        <li><a href="../../../en/decisions/" >Decisions</a></li>
+        <li><a href="../../../en/team/" >Team</a></li>
+        <li><a href="../../../en/contact/" >Contact</a></li>
+        <li><a class="lang" href="https://aymed3005.github.io/aymed/veri/nasil-sayiliyor/" lang="tr" hreflang="tr">Türkçe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<article class="wrap prose-layout with-subnav">
+  <header class="page-head">
+<p class="overline">Data</p>    <h1>How Media Coverage Is Determined</h1>
+  </header>
+  <nav class="subnav" aria-label="Data">
+    <ul><li><a href="../../../en/data/datasets/" >Datasets</a></li><li><a href="../../../en/data/how-data-were-compiled/" >How the Data Were Compiled</a></li><li><a href="../../../en/data/how-coverage-is-counted/" aria-current="page">How Media Coverage Is Determined</a></li><li><a href="../../../en/data/interpreting-the-data/" >How to Interpret the Data</a></li><li><a href="../../../en/data/x-network/" >X Network Map</a></li><li><a href="../../../en/data/data-access/" >Data Access and Contributions</a></li><li><a href="../../../en/how-to-cite/" >How to Cite This Source</a></li></ul>
+  </nav>
+  <div class="prose">
+    <p>The project’s main variable is whether a decision was covered in the
+media. The rules on this page must be kept in mind when reading the
+figures.</p>
+<h2 id="definition">Definition</h2>
+<p>A decision counts as “covered in the media” if it has at least one
+verified news item in the national media within 180 days after the
+decision date. A 7-day tolerance applies to the news date: a news item
+dated up to 7 days before the decision date also falls within the
+window. This margin absorbs date errors in matching. The sampling frame
+is the 17,776 decisions dated between 23 September 2012 and 28 September
+2025 (the first decision in the frame is dated 27 September 2012 and the
+last 25 September 2025). In this frame, 637 decisions were covered in
+the media. The 16,893 decisions with no news item at all form the
+control pool.</p>
+<h2 id="cases-not-treated-as-coverage">Cases not treated as
+coverage</h2>
+<p>Three cases do not count as “covered in the media” and are kept
+separate:</p>
+<ul>
+<li>Decisions mentioned only after 180 days (218 decisions). These serve
+a secondary “ever mentioned” analysis.</li>
+<li>Decisions with news only before the decision date (28 decisions),
+for example those that made news at the hearing or application stage but
+not after the decision.</li>
+<li>News agency output, the Court’s own announcements, local press, and
+duplicate content. These stay in the archive but are not counted.</li>
+</ul>
+<h2 id="sample">Sample</h2>
+<p>The analysis uses a case-control sample of 250 covered decisions and
+250 decisions not covered. Controls are drawn from four periods
+(2012-2015, 2016-2019, 2020-2022, 2023-2025), and in each period the
+number of controls equals the number of cases in that period (30, 65,
+72, and 83). Decision type and outcome are not matched; they are kept as
+variables in the model. The sample was drawn on 8 October 2026 with a
+fixed seed. In the control verification, records found to be mentioned
+in the archive were replaced with reserves from the same period. The
+seed and the sample size did not change.</p>
+<h2 id="number-of-decisions-in-the-model">Number of decisions in the
+model</h2>
+<p>For the 28 cases where Official Gazette publication took place after
+the first news item, the publication information is coded as missing by
+rule. These decisions stay outside the main model, which is built on 472
+decisions. Two alternative codings that include the same decisions are
+reported separately as sensitivity analyses.</p>
+<h2 id="one-decision-several-news-items">One decision, several news
+items</h2>
+<p>For covered decisions, the number of news items, the number of
+independent sources, and the delay of the first news item are recorded
+separately. The news count includes duplicate items. The independent
+source count treats a news family as one. These two numbers need not be
+equal.</p>
+<h2 id="consequence-of-the-case-control-design">Consequence of the
+case-control design</h2>
+<p>In this design, the share of cases in the sample (50 percent) does
+not reflect the share in the population: 637 of the 17,776 decisions in
+the frame were covered in the media. For this reason, only odds ratios
+are interpreted in the analysis.</p>
+
+  </div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><strong>AYMED</strong></p>
+      <p>Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public</p>
+      <p>Bursa Uludağ University · TÜBİTAK 3005 · 225K477</p>
+      <p class="muted">Views and assessments on this site belong to the project team and do not reflect the official position of TÜBİTAK.</p>
+      <p class="muted">Data version: 2026-10-08</p>
+      <p class="footer-legal">© 2026 Serdar Gülener. All rights reserved. Short quotations are permitted with attribution; reproduction, republication and adaptation require written permission. Decision texts are not covered by this copyright.</p>
+      <p class="footer-legal"><strong>Suggested citation:</strong> Gülener, S., Oğuzhan, Ö., Kaya Uyanık, G. (2026). AYMED: Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public (TÜBİTAK 3005, Project No 225K477). Bursa Uludağ University. https://aymed3005.github.io/aymed/</p>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="../../../en/how-to-cite/">Citation and copyright</a></li>
+        <li><a href="../../../en/contact/">Contact</a></li>
+        <li><a href="https://www.uludag.edu.tr/aymed">Bursa Uludağ University unit page</a></li>
+        <li><a href="https://kararlarbilgibankasi.anayasa.gov.tr">Kararlar Bilgi Bankası</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
