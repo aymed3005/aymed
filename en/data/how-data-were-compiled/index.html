@@ -12,7 +12,7 @@
 <link rel="preload" href="../../../assets/fonts/cinzel-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../../assets/css/site.css?v=f024de59">
+<link rel="stylesheet" href="../../../assets/css/site.css?v=6e8c9615">
 </head>
 <body class="page">
 <a class="skip" href="#main">Skip to content</a>
@@ -49,6 +49,24 @@ identification fields and merged into a single index. Decision date,
 deciding body, outcome, and Official Gazette publication date are
 extracted mechanically from the document text. Fields that cannot be
 extracted are marked “not found” and are not guessed.</p>
+<h2 id="identifier-correction-and-added-decisions">Identifier correction
+and added decisions</h2>
+<p>On 16 October 2026 the identifier of every decision was tied to its
+decision number. This correction separated 70 duplicate records and
+added 37 decisions that were missing from the archive. For some of
+these, the text was taken from hukukihaber.net, alomaliye.com or
+Lexpera; the source is flagged in each record.</p>
+<h2 id="political-party-and-high-court-decisions">Political party and
+High Court decisions</h2>
+<p>On 16 October 2026, 80 political party decisions and 2 High Court
+(Yüce Divan) decisions were added to the archive and the frame.
+Identification details come from the Court’s Political Party Decisions
+Database and texts from the Official Gazette; scanned pages were read
+with OCR. Sixty-six decisions have a full text; 16 (14 political party,
+2 High Court) are records with identification details only. Decisions on
+the financial audit of political parties (1,183 decisions) are kept,
+with identification details only, in a separate layer outside the
+frame.</p>
 <h2 id="news-archive">News archive</h2>
 <p>News items were compiled by scanning the archives and RSS feeds of
 national news sites for content on the Constitutional Court. Each item
@@ -57,7 +75,9 @@ institutional, excluded). Then the URL is resolved and the full text is
 retrieved. Finally a subject label is assigned (specific decision,
 general news about the Court, unrelated). Copies of the same news item
 on different sites are grouped as a “news family”. When source diversity
-is counted, one family counts as one independent source.</p>
+is counted, one family counts as one independent source. On 15 October
+2026 the archive was updated with news published up to 14 October
+2026.</p>
 <h2 id="link-between-news-and-decisions">Link between news and
 decisions</h2>
 <p>Every news item about a specific decision is linked to that decision
@@ -69,16 +89,18 @@ the decision archive. Every link requires two independent clues and a
 quotation from the news item. Links with low confidence are set aside in
 a “queue” and are not counted. News items that mention the decision only
 before it was issued are kept separate.</p>
-<h2 id="verification-of-control-decisions">Verification of control
-decisions</h2>
+<h2
+id="verification-of-control-decisions-in-the-pilot-sample">Verification
+of control decisions in the pilot sample</h2>
 <p>For every decision labelled “not covered in the media”, the absence
 of coverage must be real. For this reason, each of the 250 control
-decisions drawn into the sample was searched again in the news archive
-by two separate routes (the decision’s identification details and
-subject keywords), following a protocol written in advance. The
-sensitivity of the search method was measured on 30 known cases whose
-links had been hidden. Controls found to be mentioned in the archive
-were replaced with reserves from the same period.</p>
+decisions drawn into the pilot sample of 8 October 2026 was searched
+again in the news archive by two separate routes (the decision’s
+identification details and subject keywords), following a protocol
+written in advance. The sensitivity of the search method was measured on
+30 decisions known to be covered in the media, whose links had been
+hidden. Controls found to be mentioned in the archive were replaced with
+reserves from the same period.</p>
 <h2 id="x-data">X data</h2>
 <p>Posts were collected in regular rounds, first with a browser-based
 collector and then with a GraphQL-based one. Each post was labelled on
@@ -86,9 +108,11 @@ the dimensions of topic, sentiment, and relevance. Posts that report a
 decision were linked to decisions under the same rule as in the news
 archive (two clues, a quotation as evidence).</p>
 <h2 id="coding">Coding</h2>
-<p>Each of the 500 decisions in the sample was scored on the 44 codebook
-criteria by two independent coders. Disagreements went to a third rater.
-The coders did not see whether a decision was covered in the media.</p>
+<p>Each of the 500 decisions in the pilot sample was scored on the 44
+codebook criteria by two independent coders. Disagreements went to a
+third rater. The coders did not see whether a decision was covered in
+the media. From 15 October 2026, all decisions in the frame will be
+coded with the same codebook (full count).</p>
 
   </div>
 </article>
@@ -100,7 +124,7 @@ The coders did not see whether a decision was covered in the media.</p>
       <p>Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public</p>
       <p>Bursa Uludağ University · TÜBİTAK 3005 · 225K477</p>
       <p class="muted">Views and assessments on this site belong to the project team and do not reflect the official position of TÜBİTAK.</p>
-      <p class="muted">Data version: 2026-10-08</p>
+      <p class="muted">Data version: 2026-10-16</p>
       <p class="footer-legal">© 2026 Serdar Gülener. All rights reserved. Short quotations are permitted with attribution; reproduction, republication and adaptation require written permission. Decision texts are not covered by this copyright.</p>
       <p class="footer-legal"><strong>Suggested citation:</strong> Gülener, S., Oğuzhan, Ö., Kaya Uyanık, G. (2026). AYMED: Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public (TÜBİTAK 3005, Project No 225K477). Bursa Uludağ University. https://aymed3005.github.io/aymed/</p>
     </div>

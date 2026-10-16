@@ -58,7 +58,7 @@
   --line:#ddd7ca; --line-strong:#b9b1a2; --accent:#8a6f3d; --accent-soft:#ece5d6;
   --navy-900:#14243b; --navy:#1f3a5f; --claret:#8b1e2d; --gold:#c9a227; --gold-light:#f0d27a; --gold-text:#7a5a12; --sky:#e9eff6;
   --on-dark:#dde4ee; --on-dark-sub:#c3cedc; --on-dark-muted:#aebbcc;
-  --bb:#263f63; --nrm:#8a6f3d; --not:#c9c2b5; --gray-1:#7b8794; --gray-2:#a3b1c2;
+  --bb:#263f63; --nrm:#8a6f3d; --spyd:#8b1e2d; --not:#c9c2b5; --gray-1:#7b8794; --gray-2:#a3b1c2;
   --display:"Cinzel",Georgia,"Times New Roman",serif; --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
   --text:1rem; --lead:1.08rem; --h1:clamp(1.85rem,1.5rem + 1.2vw,2.5rem); --h2:clamp(1.55rem,1.3rem + .8vw,2rem);
   --wrap:90rem; --gutter:clamp(1rem,4vw,2.5rem); --section:clamp(2.75rem,2rem + 3vw,4.75rem);
@@ -109,7 +109,7 @@ p,.prose li{text-align:justify;-webkit-hyphens:auto;hyphens:auto}  /* gövde met
 .stat-panel dt{margin-top:.25rem;font-size:.85rem;color:var(--muted)}
 
 /* figürler */
-.charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 2.5rem;padding-top:var(--section)}
+.charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 2.5rem;padding-top:var(--section)}.charts .fig:only-of-type{grid-column:1/-1}
 .fig{margin:0;min-width:0;border-top:2px solid var(--gold);padding-top:.8rem}
 .fig figcaption{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap;margin-bottom:.6rem}
 .fig figcaption h2,.fig figcaption h3{font-size:1.15rem;margin:0;font-weight:600}
@@ -171,12 +171,12 @@ p,.prose li{text-align:justify;-webkit-hyphens:auto;hyphens:auto}  /* gövde met
 .f{display:flex;flex-direction:column;gap:.15rem;min-width:9rem}.f-sm{min-width:5.5rem}.f-grow{flex:1 1 14rem}
 .f>span,.f-check legend{font-size:.82rem;color:var(--ink);font-weight:600}
 .f select,.f input{padding:.4rem .5rem;border:1px solid var(--line-strong);border-radius:0;background:var(--surface);font:inherit;font-size:.92rem;color:var(--ink);min-height:36px}
-.f-check{border:0;padding:0;margin:0;min-width:auto}.f-check legend{padding:0;margin-bottom:.15rem}.checks{display:flex;gap:.7rem;align-items:center;min-height:36px}.f-check label{display:inline-flex;align-items:center;gap:.3rem;font-size:.92rem}.f-check input{accent-color:var(--navy);width:1rem;height:1rem}
+.f-check{border:0;padding:0;margin:0;min-width:auto;max-width:100%}.f-check legend{padding:0;margin-bottom:.15rem}.checks{display:flex;flex-wrap:wrap;gap:.2rem .7rem;align-items:center;min-height:36px}.f-check label{display:inline-flex;align-items:center;gap:.3rem;font-size:.92rem}.f-check input{accent-color:var(--navy);width:1rem;height:1rem}
 .method-note{font-size:.88rem;color:var(--muted);margin:0 auto;padding:.4rem var(--gutter) .5rem;border-top:1px solid var(--line)}
 .section-nav{display:flex;flex-wrap:wrap;gap:0 .2rem;padding-top:0;padding-bottom:0;border-top:1px solid var(--line)}
 .section-nav a{font-size:.9rem;text-decoration:none;padding:.5rem .6rem;border-bottom:2px solid transparent;color:var(--ink)}.section-nav a:hover{border-bottom-color:var(--claret)}
 .workspace{padding-top:2.5rem;scroll-margin-top:200px}
-.kpi{margin:0;display:grid;grid-template-columns:repeat(6,1fr);border-top:3px solid var(--gold);border-left:1px solid var(--line)}
+.kpi{margin:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:3px solid var(--gold);border-left:1px solid var(--line)}
 .kpi>div{padding:.8rem .9rem .7rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.kpi dd{margin:0;font-size:clamp(1.4rem,1.1rem + 1vw,1.9rem);font-weight:600;color:var(--navy);line-height:1.1}.kpi dt{margin-top:.2rem;font-size:.85rem;color:var(--muted)}
 .agrid{display:grid;grid-template-columns:1fr 1fr;gap:2rem 2.5rem;margin-top:1rem}
 .agrid .wide{grid-column:1 / -1}
@@ -207,7 +207,7 @@ p,.prose li{text-align:justify;-webkit-hyphens:auto;hyphens:auto}  /* gövde met
 .data-table tbody tr:not(.konu-row)+tr:not(.konu-row) td{border-top:1px solid var(--line)}
 .data-table .num,.data-table td.num{text-align:right;font-variant-numeric:tabular-nums}
 .tag{display:inline-block;padding:.05rem .4rem;font-size:.78rem;font-weight:600;white-space:nowrap;border:1px solid var(--line-strong)}
-.tag-bb{color:var(--bb)}.tag-nrm{color:var(--nrm)}.tag-bb,.tag-nrm{border:0;padding:0}
+.tag-bb{color:var(--bb)}.tag-nrm{color:var(--nrm)}.tag-sp,.tag-yd{color:var(--spyd)}.tag-bb,.tag-nrm,.tag-sp,.tag-yd{border:0;padding:0}
 .tag-vaka{background:var(--navy);color:#fff;border-color:var(--navy)}.tag-kontrol_havuzu{color:var(--muted)}.tag-dislanan_gec_anilma,.tag-dislanan_yalniz_karar_oncesi{color:var(--muted);border-style:dashed}
 .kbb{white-space:nowrap}
 .pager{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1rem}.pager .btn{font-size:.85rem;padding:.45rem .9rem}

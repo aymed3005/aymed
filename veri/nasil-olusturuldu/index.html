@@ -12,7 +12,7 @@
 <link rel="preload" href="../../assets/fonts/cinzel-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/source-sans-3-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/source-sans-3-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=f024de59">
+<link rel="stylesheet" href="../../assets/css/site.css?v=6e8c9615">
 </head>
 <body class="page">
 <a class="skip" href="#main">İçeriğe geç</a>
@@ -48,6 +48,22 @@ indirilmiş, her belge künye alanlarına ayrıştırılmış ve tek bir indekst
 birleştirilmiştir. Karar tarihi, karar organı, sonuç ve Resmî Gazete
 yayım tarihi belge metninden mekanik olarak çıkarılır; çıkarılamayan
 alanlar “bulunamadı” olarak işaretlenir, tahmin edilmez.</p>
+<h2 id="kimlik-düzeltmesi-ve-eklenen-kararlar">Kimlik düzeltmesi ve
+eklenen kararlar</h2>
+<p>16 Ekim 2026’da her kararın kimliği karar numarasına bağlanmıştır. Bu
+düzeltmede 70 mükerrer kayıt ayrılmış, arşivde eksik olan 37 karar
+eklenmiştir. Bu kararların bir kısmının metni hukukihaber.net,
+alomaliye.com ya da Lexpera’dan alınmıştır; kaynağı her kayıtta
+işaretlidir.</p>
+<h2 id="siyasi-parti-ve-yüce-divan-kararları">Siyasi parti ve Yüce Divan
+kararları</h2>
+<p>16 Ekim 2026’da 80 siyasi parti ve 2 Yüce Divan kararı arşive ve
+çerçeveye eklenmiştir. Künye AYM Siyasi Parti Kararları Bilgi
+Bankası’ndan, metin Resmî Gazete’den alınmıştır; taranmış sayfalarda
+metin OCR ile okunmuştur. 66 kararın tam metni vardır; 16 karar (14
+siyasi parti, 2 Yüce Divan) yalnız künye kaydıdır. Siyasi parti mali
+denetim kararları (1.183 karar) yalnız künyeyle ayrı bir katmanda
+tutulur ve çerçeveye girmez.</p>
 <h2 id="haber-arşivi">Haber arşivi</h2>
 <p>Haberler, ulusal haber sitelerinin arşivlerinden ve RSS akışlarından,
 Anayasa Mahkemesi’ni konu alan içerikler taranarak derlenmiştir. Her
@@ -56,7 +72,8 @@ kurumsal, hariç) verilir; sonra URL çözülür ve tam metin çekilir;
 ardından konu etiketi atanır (belirli bir karar, genel AYM haberi,
 ilgisiz). Aynı haberin farklı sitelerdeki kopyaları “haber ailesi”
 olarak gruplanır; kaynak çeşitliliği sayılırken bir aile tek bağımsız
-kaynak sayılır.</p>
+kaynak sayılır. Arşiv 15 Ekim 2026’da 14 Ekim 2026’ya kadar yayımlanan
+haberlerle güncellenmiştir.</p>
 <h2 id="haber-ile-karar-arasındaki-bağ">Haber ile karar arasındaki
 bağ</h2>
 <p>Belirli bir karara ilişkin her haber, karar arşivinde o karara
@@ -66,15 +83,15 @@ bilgileri (başvurucu, konu, tarih, sonuç) ile karar arşivinde tam metin
 araması. Her bağ için iki bağımsız ipucu ve haberden alıntı zorunludur.
 Güveni düşük bağlar “kuyruk” olarak ayrılır ve sayılmaz; kararı ancak
 karardan önce anan haberler ayrı tutulur.</p>
-<h2 id="kontrol-kararlarının-doğrulanması">Kontrol kararlarının
-doğrulanması</h2>
+<h2 id="pilot-örneklemde-kontrol-kararlarının-doğrulanması">Pilot
+örneklemde kontrol kararlarının doğrulanması</h2>
 <p>“Medyada yer almadı” denen her karar için bu yokluğun gerçek olması
-gerekir. Bu yüzden örnekleme çekilen 250 kontrol kararının her biri,
-önceden yazılmış bir protokolle iki ayrı yoldan (karar künyesi ve konu
-anahtar sözcükleri) haber arşivinde yeniden aranmıştır. Arama yönteminin
-duyarlılığı, bağları gizlenmiş 30 bilinen vaka üzerinde ölçülmüştür.
-Arşivde anıldığı anlaşılan kontroller aynı dönemden yedeklerle
-değiştirilmiştir.</p>
+gerekir. Bu yüzden 8 Ekim 2026 pilot örneklemine çekilen 250 kontrol
+kararının her biri, önceden yazılmış bir protokolle iki ayrı yoldan
+(karar künyesi ve konu anahtar sözcükleri) haber arşivinde yeniden
+aranmıştır. Arama yönteminin duyarlılığı, medyada yer aldığı bilinen ve
+bağları gizlenmiş 30 karar üzerinde ölçülmüştür. Arşivde anıldığı
+anlaşılan kontroller aynı dönemden yedeklerle değiştirilmiştir.</p>
 <h2 id="x-verisi">X verisi</h2>
 <p>Paylaşımlar önce tarayıcı tabanlı, sonra GraphQL tabanlı bir
 toplayıcıyla düzenli turlar hâlinde çekilmiştir. Her paylaşım konu,
@@ -82,10 +99,11 @@ duygu ve alakalılık boyutlarında etiketlenmiş; karar haberi
 niteliğindekiler, haber arşivindekiyle aynı kuralla (iki ipucu, kanıt
 alıntısı) karara bağlanmıştır.</p>
 <h2 id="kodlama">Kodlama</h2>
-<p>Örneklemdeki 500 kararın her biri kod defterindeki 44 ölçütte iki
-bağımsız kodlayıcı tarafından puanlanmış, uyuşmazlıklar üçüncü bir
+<p>Pilot örneklemdeki 500 kararın her biri kod defterindeki 44 ölçütte
+iki bağımsız kodlayıcı tarafından puanlanmış, uyuşmazlıklar üçüncü bir
 değerlendiriciye gitmiştir. Kodlayıcılar kararın medyada yer alıp
-almadığını görmemiştir.</p>
+almadığını görmemiştir. 15 Ekim 2026’dan itibaren çerçevedeki bütün
+kararlar aynı kod defteriyle kodlanacaktır (tam sayım).</p>
 
   </div>
 </article>
@@ -97,7 +115,7 @@ almadığını görmemiştir.</p>
       <p>Türkiye&#39;de Anayasa Mahkemesi Kararlarının Medyada Görünürlüğünü Belirleyen Faktörler ve Mahkemenin Kamuoyuyla İletişimini Güçlendirmeye Yönelik Bir Model Önerisi</p>
       <p>Bursa Uludağ Üniversitesi · TÜBİTAK 3005 · 225K477</p>
       <p class="muted">Sitedeki görüş ve değerlendirmeler proje ekibine aittir; TÜBİTAK&#39;ın resmî görüşünü yansıtmaz.</p>
-      <p class="muted">Veri sürümü: 2026-10-08</p>
+      <p class="muted">Veri sürümü: 2026-10-16</p>
       <p class="footer-legal">© 2026 Serdar Gülener. Tüm hakları saklıdır. Kaynak gösterilerek kısa alıntı yapılabilir; çoğaltma, yeniden yayımlama ve uyarlama yazılı izne bağlıdır. Karar metinleri bu telifin kapsamında değildir.</p>
       <p class="footer-legal"><strong>Önerilen atıf:</strong> Gülener, S., Oğuzhan, Ö., Kaya Uyanık, G. (2026). AYMED: Türkiye&#39;de Anayasa Mahkemesi Kararlarının Medyada Görünürlüğünü Belirleyen Faktörler ve Mahkemenin Kamuoyuyla İletişimini Güçlendirmeye Yönelik Bir Model Önerisi (TÜBİTAK 3005, Proje No 225K477). Bursa Uludağ Üniversitesi. https://aymed3005.github.io/aymed/</p>
     </div>

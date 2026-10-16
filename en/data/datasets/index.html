@@ -5,14 +5,14 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datasets · AYMED: Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public (TÜBİTAK 3005 · Project No 225K477)</title>
-<meta name="description" content="The project has produced three raw archives and one coded dataset. Figures are as of October 2026 and will change as the archive update continues.">
+<meta name="description" content="The project has produced three raw archives and one coded dataset. Figures belong to the version of 16 October 2026.">
 <link rel="alternate" hreflang="tr" href="https://aymed3005.github.io/aymed/veri/veri-setleri/">
 <link rel="canonical" href="https://aymed3005.github.io/aymed/en/data/datasets/"><link rel="alternate" hreflang="en" href="https://aymed3005.github.io/aymed/en/data/datasets/"><link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../../../assets/fonts/cinzel-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/cinzel-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/source-sans-3-normal-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../../assets/css/site.css?v=f024de59">
+<link rel="stylesheet" href="../../../assets/css/site.css?v=6e8c9615">
 </head>
 <body class="page">
 <a class="skip" href="#main">Skip to content</a>
@@ -43,8 +43,7 @@
   </nav>
   <div class="prose">
     <p>The project has produced three raw archives and one coded dataset.
-Figures are as of October 2026 and will change as the archive update
-continues.</p>
+Figures belong to the version of 16 October 2026.</p>
 <h2 id="constitutional-court-decision-archive">1. Constitutional Court
 decision archive</h2>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table>
@@ -57,26 +56,53 @@ decision archive</h2>
 <td>Coverage</td>
 <td>Individual application decisions published in the Decisions Database
 (Kararlar Bilgi Bankası), from 23 September 2012, and constitutionality
-review decisions, from 1962. Sampling frame: 17,776 decisions
-(eligibility rule: decision date 23.09.2012 - 28.09.2025; first decision
-in the frame 27.09.2012, last decision 25.09.2025)</td>
+review decisions, from 1962; political party and High Court decisions in
+the Political Party Decisions Database, from 23 September 2012. Frame:
+19,794 decisions (eligibility rule: decision date 23.09.2012 -
+14.10.2026, undated and duplicate records excluded; first decision in
+the frame 27.09.2012, last decision 08.09.2026)</td>
 </tr>
 <tr class="even">
 <td>Size</td>
-<td>22,795 decisions: 17,268 individual applications, 5,527
-constitutionality reviews (cut-off: April 2026)</td>
+<td>23,459 decisions: 17,760 individual applications, 5,617
+constitutionality reviews, 80 political party decisions, 2 High Court
+decisions (decisions published up to 14 October 2026; most recent
+decision 8 September 2026)</td>
 </tr>
 <tr class="odd">
+<td>Identifier</td>
+<td>Decision number; the correction of 16 October 2026 separated 70
+duplicate records and added 37 missing decisions</td>
+</tr>
+<tr class="even">
 <td>Content</td>
 <td>Full text and identification fields: application/docket number,
 decision date, deciding body (Plenary or Section), outcome, Official
 Gazette publication date, vote status, type of applicant</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Source</td>
 <td>Constitutional Court Decisions Database
 (kararlarbilgibankasi.anayasa.gov.tr), decision documents in DOCX
-format</td>
+format; for some of the 37 added decisions the text was taken from
+hukukihaber.net, alomaliye.com or Lexpera, and the source is
+flagged</td>
+</tr>
+<tr class="even">
+<td>Political party and High Court</td>
+<td>Identification details from the Court’s Political Party Decisions
+Database, text from the Official Gazette (OCR for scanned pages); 66
+full texts, 16 records with identification details only (14 political
+party, 2 High Court). Political party decisions by type: deemed
+dissolved 49, name, emblem or removal from the register 11, warning 6,
+closure 1 (return of the HDP indictment), treasury 1, other
+miscellaneous 12. High Court: 2 decisions (2012 and 2017)</td>
+</tr>
+<tr class="odd">
+<td>Financial audit layer</td>
+<td>1,183 decisions on the financial audit of political parties (after
+23 September 2012), identification details only; outside the frame and
+the media coverage count; news items are linked to 202 of them</td>
 </tr>
 </tbody>
 </table></div>
@@ -94,19 +120,19 @@ news sites; news about the Court</td>
 </tr>
 <tr class="even">
 <td>Size</td>
-<td>19,395 news items (January 2012 - 27 January 2026; collection
-cut-off 27 March 2026)</td>
+<td>29,714 raw records (January 2012 - 14 October 2026)</td>
 </tr>
 <tr class="odd">
 <td>Source type</td>
-<td>Included traditional 7,986 · included digital 8,086 · agency 676 ·
-Court institutional 276 · excluded (local, duplicate) 2,371</td>
+<td>Included 20,182: traditional 10,507 · digital 9,675 · agency 816 ·
+Court website 318 · out of scope 8,398</td>
 </tr>
 <tr class="even">
 <td>Subject label</td>
-<td>2,629 news items concern a specific decision and are linked to a
-decision ID; the rest are general news about the Court or unrelated
-content</td>
+<td>3,448 news items concern a specific decision and are linked to a
+decision ID (3,312 from the first labelling, 136 moved from general
+Court news during recoding); 8,922 items are general news about the
+Court (eight subclasses)</td>
 </tr>
 <tr class="odd">
 <td>Content</td>
@@ -129,7 +155,7 @@ Court’s official account</td>
 </tr>
 <tr class="even">
 <td>Size</td>
-<td>12,132 posts (October 2024 - October 2026)</td>
+<td>10,512 posts (29 October 2024 - 14 October 2026)</td>
 </tr>
 <tr class="odd">
 <td>Labels</td>
@@ -153,25 +179,31 @@ update)</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Sample</td>
-<td>500 decisions: 250 decisions covered in the media and 250 not
-covered, with the period distribution balanced</td>
+<td>Design</td>
+<td>Full count (decision of 15 October 2026): all 19,794 decisions in
+the frame will be coded</td>
 </tr>
 <tr class="even">
+<td>Pilot</td>
+<td>500 decisions (sample of 8 October 2026): 250 decisions covered in
+the media and 250 not covered, with the period distribution
+balanced</td>
+</tr>
+<tr class="odd">
 <td>Criteria</td>
 <td>Codebook v4.3: 44 criteria (open justice 14, mediatization 23,
 identification and communication layer), each on a 0-3 scale</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Evidence</td>
 <td>Each score comes with a verbatim quotation from the decision text;
 the quotations were verified by script</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Additional layer</td>
-<td>For the 250 covered decisions, a visibility record: number of news
-items, number of independent sources, delay of the first news item,
-representative news item</td>
+<td>For the 250 covered decisions in the pilot, a visibility record:
+number of news items, number of independent sources, delay of the first
+news item, representative news item</td>
 </tr>
 </tbody>
 </table></div>
@@ -188,7 +220,7 @@ Contributions page.</p>
       <p>Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public</p>
       <p>Bursa Uludağ University · TÜBİTAK 3005 · 225K477</p>
       <p class="muted">Views and assessments on this site belong to the project team and do not reflect the official position of TÜBİTAK.</p>
-      <p class="muted">Data version: 2026-10-08</p>
+      <p class="muted">Data version: 2026-10-16</p>
       <p class="footer-legal">© 2026 Serdar Gülener. All rights reserved. Short quotations are permitted with attribution; reproduction, republication and adaptation require written permission. Decision texts are not covered by this copyright.</p>
       <p class="footer-legal"><strong>Suggested citation:</strong> Gülener, S., Oğuzhan, Ö., Kaya Uyanık, G. (2026). AYMED: Factors Determining the Media Visibility of Constitutional Court Decisions in Türkiye and a Model Proposal to Strengthen the Court&#39;s Communication with the Public (TÜBİTAK 3005, Project No 225K477). Bursa Uludağ University. https://aymed3005.github.io/aymed/</p>
     </div>
